@@ -31,7 +31,7 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form name="contact1-form" class="contact1-form validate-form">
+				<form class="contact1-form validate-form">
 					<span class="contact1-form-title">
 						Get in touch
 					</span>
@@ -68,9 +68,6 @@
 			</div>
 		</div>
 
-
-
-
 		<!--===============================================================================================-->
 		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 		<!--===============================================================================================-->
@@ -86,28 +83,18 @@
 			})
 		</script>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-
-			gtag('config', 'UA-23581568-13');
-		</script>
- -->
 		<!--===============================================================================================-->
 		<script src="js/main.js"></script>
 		<!--===============================================================================================-->
 		<!-- https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec -->
-		<!-- 		<script>
+		<script>
 			$(".contact1-form").on("submit", function (e) {
 				//optional validation code here
 
 				e.preventDefault();
 
 				$.ajax({
-					url: "https://script.google.com/macros/s/AKfycbyriO2IMUSifldSaDJoDg0LL4wKTk8EzxIpsXoGR6C8tfj3czuLHuPd_nBxwhnhnr11cQ/exec",
+					url: "https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec",
 					method: "POST",
 					dataType: "json",
 					data: $(".contact1-form").serialize(),
@@ -125,9 +112,9 @@
 					},
 				});
 			});
-		</script> -->
+		</script>
 
-		<script>
+		<!-- <script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec'
 			const form = document.forms['contact1-form']
 
@@ -137,7 +124,7 @@
 					.then(response => console.log('Success!', response))
 					.catch(error => console.error('Error!', error.message))
 			})
-		</script>
+		</script> -->
 
 	</body>
 
