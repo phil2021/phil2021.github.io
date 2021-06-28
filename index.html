@@ -31,7 +31,7 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="contact1-form validate-form">
+				<form name="contact1-form" class="contact1-form validate-form">
 					<span class="contact1-form-title">
 						Get in touch
 					</span>
@@ -97,10 +97,10 @@
 					url: "https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec",
 					method: "POST",
 					dataType: "json",
-					data: $(".contact1-form").serialize(),
+					data: $("contact1-form").serialize(),
 					success: function (response) {
 						if (response.result == "success") {
-							$(".contact1-form")[0].reset();
+							$("contact1-form")[0].reset();
 							alert("Thank you for contacting us.");
 							return true;
 						} else {
