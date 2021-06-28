@@ -121,13 +121,7 @@
 			form.addEventListener('submit', e => {
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-					.then(response => <div class="alert alert-warning alert-dismissible fade show" role="alert">
-						<strong>Holy guacamole!</strong> You should check in on some of those fields below.
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>)
-
+					.then(response => alert("Thank you for contacting us."))
 					.catch(error => alert("Something went wrong. Please try again."))
 			})
 		</script>
