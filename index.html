@@ -121,8 +121,8 @@
 			form.addEventListener('submit', e => {
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-					.then(response => alert("Thank you for contacting us."))
-					.then(response => form[0].reset())
+					.then(response => alert("Thank you for contacting us."), form.reset())
+
 					.catch(error => alert("Something went wrong. Please try again."))
 			})
 		</script>
