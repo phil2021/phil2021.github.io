@@ -86,33 +86,10 @@
 		<!--===============================================================================================-->
 		<script src="js/main.js"></script>
 		<!--===============================================================================================-->
-		<!-- https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec -->
-		<!-- 	<script>
-			$(".contact1-form").on("submit", function (e) {
-				//optional validation code here
 
-				e.preventDefault();
-
-				$.ajax({
-					url: "https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec",
-					method: "POST",
-					dataType: "json",
-					data: $("contact1-form").serialize(),
-					success: function (response) {
-						if (response.result == "success") {
-							$("contact1-form")[0].reset();
-							alert("Thank you for contacting us.");
-							return true;
-						} else {
-							alert("Something went wrong. Please try again.");
-						}
-					},
-					error: function () {
-						alert("Something went wrong. Please try again.");
-					},
-				});
-			});
-		</script> -->
+		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 		<script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbwrOo7i-l6F7AYN0dD5N-Q3W-sJJOtVTnlyvqU0cNOAzHgpJdiaaIb-LLaDmqFUmi3k/exec'
