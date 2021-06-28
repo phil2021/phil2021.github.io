@@ -87,7 +87,7 @@
 		<script src="js/main.js"></script>
 		<!--===============================================================================================-->
 		<!-- https://script.google.com/macros/s/AKfycbzrGN983Te1Coj1j6ZZ9F8suVCsYvRleZDAuVDE9qdRJVRbpV45zpztA8KvB54KQ1B4/exec -->
-<!-- 		<script>
+	<!-- 	<script>
 			$(".contact1-form").on("submit", function (e) {
 				//optional validation code here
 
@@ -121,13 +121,7 @@
 			form.addEventListener('submit', e => {
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-					.then(response => {if (response.result == "success") {
-							$("contact1-form")[0].reset();
-							alert("Thank you for contacting us.");
-							return true;
-						}else {
-							alert("Something went wrong. Please try again.");
-						}})
+					.then(response => console.log('Success!', response))
 					.catch(error => console.error('Error!', error.message))
 			})
 		</script>
